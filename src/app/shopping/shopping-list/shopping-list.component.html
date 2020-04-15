@@ -1,1 +1,5 @@
-<p>shopping-list works!</p>
+<ul class='list-group'>
+  <a class='list-group-item' style="cursor: pointer" *ngFor='let each of ingredients'>
+    {{each.name}} ({{each.amount}})
+  </a>
+</ul>
