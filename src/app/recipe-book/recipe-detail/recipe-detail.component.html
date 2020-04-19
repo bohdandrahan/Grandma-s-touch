@@ -1,37 +1,43 @@
 <div class="row">
   <div class="col-xs-12">
-    <img src="" alt="" clas='image-responsive'>
+    <img [src]="recipe.imagePath"
+         alt="{{recipe.name}}"
+         clas='image-responsive'
+         style="max-height: 300px">
   </div>
 </div>
 <div class="row">
   <div class="col-xs-12">
-    <h1>Recipe Name</h1>
+    <h1>{{recipe.name}}</h1>
   </div>
 </div>
 <div class="row">
   <div class="col-sx-12">
-    <div class="btn-group">
-      <button type="button" name="button" class='btn btn-success dropdown-toggle'>
+    <div class="panel panel-info">
+      <div class="panel-heading">
         Manage Recipe
-        <span class="caret">
-        </span>
-      </button>
-      <ul class="dropdown-menu">
-        <li><a href="#">To Shoping list</a></li>
-        <li><a href="#">Edit Recipe</a></li>
-        <li><a href="#">Delete Recipe</a></li>
-      </ul>
+      </div>
+      <div class="panel-body">
+        <button type="button"
+                name="button"
+                class="btn btn-info">To Shopping list</button>
+        <button type="button"
+                name="button"
+                class="btn btn-info">Edit Recipe</button>
+        <button type="button"
+                name="button"
+                class="btn btn-info">Delete Recipe</button>
+      </div>
     </div>
   </div>
-</div>
 
-<div class="row">
-  <div class="col-xs-12">
-    Description
+  <div class="row">
+    <div class="col-xs-12">
+      {{recipe.description}}
+    </div>
   </div>
-</div>
-<div class="row">
-  <div class="col-xs-12">
-    Ingridients
+  <div class="row">
+    <div class="col-xs-12">
+      Ingridients
+    </div>
   </div>
-</div>
