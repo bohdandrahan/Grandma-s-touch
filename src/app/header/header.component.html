@@ -7,20 +7,15 @@
 
     <div class="navbar-default">
       <ul class="nav navbar-nav">
-        <li><a href="#"
-             (click)='onRecipes()'>Recipes</a></li>
-        <li><a href="#"
-             (click)='onShopping()'>Shopping List</a></li>
+        <li routerLinkActive="active"><a routerLink='/recipes'>Recipes</a></li>
+        <li routerLinkActive="active"><a routerLink='/shopping-list'>Shopping List</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li class="dropdown"> <a href="#"
-             class="dropdown-toggle"
+        <li class="dropdown"> <a class="dropdown-toggle"
              role="button"> Manage</a>
           <ul class="dropdown-menu">
-            <li a
-                href="#"> Save Data</li>
-            <li a
-                href="#"> Fetch Data</li>
+            <li a> Save Data</li>
+            <li a> Fetch Data</li>
           </ul>
         </li>
       </ul>
